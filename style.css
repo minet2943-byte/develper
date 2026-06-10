@@ -1,0 +1,138 @@
+:root {
+  --bg: #f6f3f3; /* dark navy */
+  --fg: #34383e; /* light text */
+  --accent: #22c55e; /* green */
+  --hover: #d9e9d9; /* darker hover */
+  --focus: #d9dee4; /* focus ring */
+}
+
+:root {
+  --surface: #f3efe7;
+  --surface-header: rgba(243, 239, 231, 0.82);
+  --surface-elevated: rgba(255, 252, 247, 0.84);
+  --text: #1d2433;
+  --muted: #59657c;
+  --accent: #0f9d7a;
+  --accent-strong: #d97706;
+  --line: rgba(29, 36, 51, 0.12);
+  --glow-soft: rgba(255, 255, 255, 0.3);
+}
+
+/* Reset/utility */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background:#2f0606;
+  color: #111;
+}
+/* NAVBAR */
+nav {
+  background: var(--bg);
+  color: var(--fg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-inner {
+  max-width: 1100px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+.brand a {
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+/* Menu list (desktop) */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  color: var(--fg);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+}
+.menu a:hover {
+  background: var(--hover);
+}
+.menu a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+/* Mobile toggle */
+.toggle {
+  display: none; /* checkbox hidden */
+}
+.toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #334155;
+}
+.toggle-label:focus-visible {
+  outline: 3px solid var(--focus);
+
+  outline-offset: 2px;
+}
+/* Responsive: stack menu on small screens */
+@media (max-width: 640px) {
+  .nav-inner {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* hidden by default */
+    background: var(--bg);
+    border-top: 1px solid #415f89;
+    padding: 0.5rem 0;
+  }
+  /* Show hamburger button */
+  .toggle-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--fg);
+  }
+  /* If checkbox is checked, show menu */
+  .toggle:checked + .toggle-label + ul.menu {
+    display: flex;
+   
+  }
+
+  
+}
+main {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+@media (max-width: 640px) {
+
+  .main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+  }
+}
+
+.bg-main{
+  background-color: #000000;
+}

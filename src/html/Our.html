@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- link Tailwind -->
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- link cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-main">
+    <nav aria-label="Primary" class="bg-white">
+        <div class="nav-inner lg:h-15 md:h-15">
+            <div class="brand"><a href="#">KAPI <span class="text-green-700">BARA</span></a></div>
+            <!-- Mobile toggle (checkbox hack) -->
+            <input id="nav-toggle" class="toggle" type="checkbox" ariacontrols="
+primary-menu" aria-expanded="false" />
+            <label for="nav-toggle" class="toggle-label" aria-label="Toggle
+navigation">☰ <span>Menu</span></label>
+            <ul id="primary-menu" class="menu font-medium text-sm ">
+                <li><a href="./index.html" class="home">HOME</a></li>
+                <li><a href="./src/html/Menu.html">MENU</a></li>
+                <li><a href="#">OUR STORY</a></li>
+                <li><a href="./src/html/visit.html">VISIT OUR</a></li>
+                <li><a href="./src/html/Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <main class="w-full py-29 px-6 ">
+    <div class="max-w-5xl mx-auto text-center">
+        <h1 class="text-5xl font-extrabold text-white mb-8">    Our Story </h1>
+         <h2 class="text-2xl text-green-400 font-semibold mb-6">   Born from a love of coffee</h2>
+        <p class="text-xl text-gray-300 leading-10 mt-6 "> Kopi Bara started as a small weekend cart in 2018 — just a handgrinder, a pour-over kit, and a dream. Today we're a neighborhood staple, roasting our own beans and serving hundreds of happycustomers every day.</p>
+        <p class="text-xl text-gray-400 leading-10"> We partner with Cambodian farmers to source the finest single-originbeans, roasted in-house every week to guarantee the freshest cup in  the city.  </p>
+
+    </div>
+</main>
+  <div class="max-w-2xl mx-auto py-10 lg:ml-70 ">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
+
+            <!-- Card 1 -->
+            <div class="border border-slate-700 rounded-2xl p-4
+             hover:-translate-y-1 hover:scale-105
+             hover:border-green-500
+             transition-all duration-300 cursor-pointer">
+                <h2 class="text-white text-3xl font-bold">200+</h2>
+                <p class="text-slate-400 text-sm mt-2">
+                   cup per day
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="border border-slate-700 rounded-2xl p-4
+             hover:-translate-y-1 hover:scale-105
+             hover:border-green-500
+             transition-all duration-300 cursor-pointer">
+                <h2 class="text-white text-3xl font-bold">4.9</h2>
+                <p class="text-slate-400 text-sm mt-2">
+                    Avg. rating
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="border border-slate-700 rounded-2xl p-4
+             hover:-translate-y-1 hover:scale-105
+             hover:border-green-500
+             transition-all duration-300 cursor-pointer">
+                <h2 class="text-white text-3xl font-bold">2+</h2>
+                <p class="text-slate-400 text-sm mt-2">
+                    Years of experience
+                </p>
+            </div>
+
+        </div>
+    </div>
+   
+      <footer class="bg-gray-500 text-white py-12 mt-33">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-4">Contact Here</h3>
+                <p class="text-gray-200">coffeehouse@gmail.com</p>
+                <p class="text-gray-200 mt-2">+855 12 345 678</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-4">Menu Name</h3>
+                <ul class="space-y-2 text-gray-200">
+                    <li>Espresso</li>
+                    <li>Americano</li>
+                    <li>Cappuccino</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center gap-4 mb-4">
+                    <a href="#"   class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"  class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#"   class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="text-gray-200">Design and Data</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

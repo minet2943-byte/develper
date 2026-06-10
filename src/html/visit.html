@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- link Tailwind -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- link cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="bg-main">
+    <nav aria-label="Primary" class="bg-white">
+        <div class="nav-inner lg:h-15 md:h-15">
+            <div class="brand"><a href="#">KAPI <span class="text-green-700">BARA</span></a></div>
+            <!-- Mobile toggle (checkbox hack) -->
+            <input id="nav-toggle" class="toggle" type="checkbox" ariacontrols="
+primary-menu" aria-expanded="false" />
+            <label for="nav-toggle" class="toggle-label" aria-label="Toggle
+navigation">☰ <span>Menu</span></label>
+            <ul id="primary-menu" class="menu font-medium text-sm ">
+                <li><a href="./index.html" class="home">HOME</a></li>
+                <li><a href="./src/html/Menu.html">MENU</a></li>
+                <li><a href="./src/html/Our.html">OUR STORY</a></li>
+                <li><a href="#">VISIT OUR</a></li>
+                <li><a href="./src/html/Contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+  <main class="w-full py-29 px-6 flex-col justify-center flex items-center ">
+    <h1 class="text-5xl font-extrabold text-white mb-8"> Vist Our</h1>
+    <h2 class="text-2xl text-green-400 font-semibold mb-6">Hours & location</h2>
+     <div class="max-w-3xl mx-auto py-10 lg:ml-70  ">
+        <div class="flex w-full lg:ml-35 flex-col sm:flex-row gap-4 items-center justify-center ">
+            <!-- Card 1 -->
+            <div class="border border-slate-700 rounded-2xl px-9 py-4
+             hover:-translate-y-1 hover:scale-105
+             hover:border-green-500
+             transition-all duration-300 cursor-pointer">
+                <h2 class="text-white text-xl font-bold">Monday → Friday </h2>
+                <p class="text-slate-400 text-sm mt-2">
+                  7AM → 9PM 
+                </p>
+            </div>
+
+           <div class="border border-slate-700 rounded-2xl px-7 py-4
+             hover:-translate-y-1 hover:scale-105
+             hover:border-green-500
+             transition-all duration-300 cursor-pointer">
+                <h2 class="text-white text-xl font-bold">Saturday → Sunday</h2>
+                <p class="text-slate-400 text-sm mt-2">
+                  8AM → 10PM 
+                </p>
+            </div>
+
+
+              <div class="border border-slate-700 rounded-2xl px-12 py-4
+             hover:-translate-y-1 hover:scale-105
+             hover:border-green-500
+             transition-all duration-300 cursor-pointer">
+                <h2 class="text-white text-xl font-bold">Pubplic Holyday </h2>
+                <p class="text-slate-400 text-sm mt-2">
+                  Close
+                </p>
+            </div>
+
+
+
+        </div>
+        <div class="flex w-full lg:ml-35 flex-col sm:flex-row gap-4 items-center justify-between   mt-15">
+            <!-- Card 1 -->
+               <div class="border border-slate-700 rounded-2xl px-23 py-4
+                    hover:-translate-y-1 hover:scale-105
+                 hover:border-green-500
+                  transition-all duration-300 cursor-pointer">
+                  <h2 class="text-white text-xl font-bold"> <span class="w-full mr-5 text-red-700"><i class="fa-solid fa-map-pin"></i></span>location</h2>
+                  <p class="text-slate-400 text-sm mt-2">
+                  Street 278,BKK1,Phnom Penh
+                  </p>
+               </div>
+
+           <div class="border border-slate-700 rounded-2xl px-23 py-4
+             hover:-translate-y-1 hover:scale-105
+            hover:border-green-500
+            transition-all duration-300 cursor-pointer">
+            <h2 class="text-white text-xl font-bold"><span  class="w-full mr-5 text-red-700"><i class="fa-solid fa-envelope"></i></span> Email</h2>
+           <p class="text-slate-400 text-sm mt-2">
+           hello@kopibara.com
+           </p>
+          </div>
+
+
+        </div>
+          
+        
+    </div>
+ 
+</main>
+    
+  <footer class="bg-gray-500 text-white py-12 mt-47">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-4">Contact Here</h3>
+                <p class="text-gray-200">coffeehouse@gmail.com</p>
+                <p class="text-gray-200 mt-2">+855 12 345 678</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-4">Menu Name</h3>
+                <ul class="space-y-2 text-gray-200">
+                    <li>Espresso</li>
+                    <li>Americano</li>
+                    <li>Cappuccino</li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center gap-4 mb-4">
+                    <a href="#"   class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"  class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#"   class="w-10 h-10 bg-white text-teal-800 rounded-full flex items-center justify-center hover:scale-110 transition">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p class="text-gray-200">Design and Data</p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
